@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    display: block;
+}
+
+/* -------------------- header ------------------------ */
+.outerHeader {
+    width: 100%;
+}
+
+.innerHeader {
+    width: 1030px;
+    margin: 0 auto;
+}
+
+.innerHeader .navBox {
+    width: 100%;
+    overflow: hidden;
+}
+
+.innerHeader .navBox .bland {}
+
+.innerHeader .navBox .gnb {
+    float: right;
+}
+
+.innerHeader .navBox .gnb ul {
+    font-size: 0;
+}
+
+.innerHeader .navBox .gnb li {
+    display: inline-block;
+    font-size: 11px;
+    border-right: 1px solid black;
+    padding: 0 8px;
+    line-height: 9px;
+    /* 글자높이만큼 들어감- 그러나 더이상 안줄어지는 한계값있음 */
+}
+
+/* 본문 13-14px 글자 9-10px */
+/* 마진 제로와 플롯 같이 사용하면 안됨 */
+.innerHeader .navBox li:last-child {
+    border: none;
+}
+
+.innerHeader .logoBox {
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+}
+
+.innerHeader .logoBox .logo {
+    width: 200px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.innerHeader .logoBox .search {
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+.lnbBox {
+    width: 100%;
+    height: 30px;
+    background-color: #1d2d51;
+}
+
+.lnbBox .lnb {
+    width: 1030px;
+    margin: 0 auto;
+}
+
+.lnbBox .lnb li {
+    display: inline-block;
+    color: white;
+    line-height: 30px;
+    padding: 0 25px;
+}
+
+/* -------------------- wrap ------------------------ */
+.wrap {
+    width: 1030px;
+    margin: 0 auto
+}
+
+/* -------------------- visualmain------------------------ */
+
+.visualMain {
+    width: 100%;
+    overflow: hidden;
+    margin: 15px;
+}
+
+.visualMain .visual_left {
+    width: 700px;
+    height: 530px;
+    float: left;
+    margin-right: 15px;
+}
+
+.visualMain .visual_left img {
+    width: 100%;
+    /* height: 100%; */
+    height: auto;
+}
+
+.visualMain .visual_right {
+    width: 315px;
+    height: 530px;
+    float: left;
+}
+
+.visualMain .visual_right .visual_right_top {
+    margin-bottom: 15px;
+}
+
+/* 이미지 사이즈와 박스사이즈같아야함 
+이미지속성 블럭으로하여 width100% */
+
+.titleBox {
+    width: 100%;
+    overflow: hidden;
+}
+
+.titleBox .bar {
+    width: 400px;
+    height: 50px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.titleBox .title {
+    width: 230px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+}
+
+.content01 img {
+    margin-bottom: 30px;
+}
+
+.content01_1 img {
+    border: 1px solid #ccc;
+}
+
+
+#tab01,
+#tab02 {
+    display: none;
+}
+
+#tab01:checked~.sheet.sheet01 {
+    display: block;
+}
+
+#tab02:checked~.sheet.sheet02 {
+    display: block;
+}
+
+/* .sheet {display: none;} */
+
+/* 
+label{overflow: hidden;}
+
+.label label {
+float: left;
+} */
+
+.sheet {
+    overflow: hidden;
+}
+
+.sheet01,
+.sheet02 {
+    width: 505px;
+    height: 660px;
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.sheet02 {
+    margin-right: 0;
+}
+
+.sheet01_1,
+.sheet02_2 {
+    width: 505px;
+    float: left;
+}
+
+.sheet01_2 div,
+.sheet02_1 div {
+    width: 245px;
+    height: 220px;
+    float: left;
+    margin-right: 15px;
+}
+
+.sheet02_1 div:nth-child(2),
+.sheet01_2 div:nth-child(2) {
+    margin-right: 0px;
+}
+/* -------------------- content2------------------------ */
+
+.content03 {overflow: hidden;}
+
+
+.content03_1,.content03_3 {
+    width: 340px;
+    height:410px ;
+    float: left;
+}
+.content03_1 div, .content03_3 div {
+    width: 340px;
+    height: 190px;
+    float: left;
+    margin-bottom: 20px;
+}
+.content03_2 div{
+    width: 340px;
+    height: 400px;
+    float: left;
+    margin-left: 10px;
+   
+}
+/* -------------------- content3------------------------ */
+
+.content04{
+    overflow: hidden;
+    margin-bottom: 50px;}
+
+.content04_1 div {
+    width: 505px;
+    float: left;
+    margin-right: 20px;
+}
+.content04_1 div:nth-child(2){
+    margin: 0;
+}
+/* -------------------- content4------------------------ */
+.footer_01{
+    overflow: hidden;
+
+}
+
+.link li{
+ float: left;
+ padding: 10px;
+}
+
+.sns li{
+    float: right;
+    font-size: 20px;
+    padding: 5px;
+    color: rgb(46, 46, 46);
+}
+
+
+.footer_02{margin-top: 10px;}
+address{
+    width: 900px;
+    float: left
+}
+
+.fLink select{
+   background: white;
+   border: 1px solid #ccc;
+   color: #ccc;
+   padding: 5px 10px;
+   
+}

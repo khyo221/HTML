@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab menu</title>
+    <style>
+        * {margin: 0; padding: 0;}
+
+        #tab01,#tab02,#tab03,#tab04,#tab05 {
+            display: none;
+        }
+        #tab01:checked ~.sheet .sheet01{display: block;}
+        #tab02:checked ~.sheet .sheet02{display: block;}
+        #tab03:checked ~.sheet .sheet03{display: block;}
+        #tab04:checked ~.sheet .sheet04{display: block;}
+        #tab05:checked ~.sheet .sheet05{display: block;}
+
+        #tab01:checked ~.label .lab01{background-color: black; color: white;}
+        #tab02:checked ~.label .lab02{background-color: black; color: white;}
+        #tab03:checked ~.label .lab03{background-color: black; color: white;}
+        #tab04:checked ~.label .lab04{background-color: black; color: white;}
+        #tab05:checked ~.label .lab05{background-color: black; color: white;}
+ 
+        h1 {
+            background-color: #ddd;
+            padding: 20px;
+        }
+       
+        .label div {
+            float: left;
+            overflow: hidden;
+        }
+
+        .label label {
+            display: block;
+            width: 200px;
+            height: 180px;
+            color: black;
+            background: white;
+            border: 2px solid black;
+            box-sizing: border-box;
+            text-align: center;
+            line-height:180px;
+           
+        }
+       
+        .sheet .sheet01,
+        .sheet .sheet02,
+        .sheet .sheet03,
+        .sheet .sheet04,
+        .sheet .sheet05 {
+            display: none;
+        }
+
+        .sheet div {
+            width:1500px;
+            height: 900px;
+            background: white;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+        .sheet img{
+            margin: 10px 8px;
+           }
+        .sheet p {
+            display: inline-block;
+            margin: 10px 8px;
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <h1>내가 여행하고 싶은 여행지</h1>
+
+    <input type="radio" id="tab01" name="radio" checked>
+    <input type="radio" id="tab02" name="radio">
+    <input type="radio" id="tab03" name="radio">
+    <input type="radio" id="tab04" name="radio">
+    <input type="radio" id="tab05" name="radio">
+
+
+    <div class="label">
+        <div>
+            <label for="tab01" class="lab01">01. 아이슬란드 </label>
+            <label for="tab02" class="lab02">02. 그리스</label>
+            <label for="tab03" class="lab03">03. 호주</label> 
+            <label for="tab04" class="lab04">04. 남아프리카</label> 
+            <label for="tab05" class="lab05">05. 쿠바</label> 
+        </div>
+    </div>
+
+   
+    
+    <div class="sheet">
+        <div class="sheet01"> 
+            <img src="./img/01_img_sheet.png" alt="">
+            <p>아이슬란드</p>
+        </div>
+        <div class="sheet02"> 
+            <img src="./img/02_img_sheet.jpg" alt="">
+            <p>그리스</p>
+        </div>
+        <div class="sheet03">
+             <img src="./img/03_img_sheet.jpg" alt="">
+             <p>호주</p>
+            </div>
+        <div class="sheet04"> 
+            <img src="./img/04_img_sheet.jpg" alt="">
+        <p>남아프리카</p>
+        </div>
+        <div class="sheet05"> 
+            <img src="./img/05_img_sheet.jpg" alt="">
+            <p>쿠바</p>
+        </div>
+    </div>
+
+</body>
+</html>

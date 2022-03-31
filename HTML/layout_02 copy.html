@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+        * {
+            margin: 0;
+            padding: 0; list-style: none; 
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        
+        header{
+            margin: 0 auto;
+            width: 1000px;
+            position: relative;  
+        }
+
+        nav {
+            margin: 0 auto;
+            width: 1000px;
+        }
+        nav li:hover{
+            background: black;
+            color: white;
+        }
+
+        .btn_01 {overflow: hidden;}
+
+        .btn_01 ul{
+            margin-top: 50px;
+            float: right;
+        }
+        .btn_01 li,.btn_02 li {
+            float: left;
+            width: auto;
+            padding: 15px;
+            height: 50px;
+            background-color: white;
+            border:  1px solid black;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .btn_01 li:nth-child(1), .btn_02 li:nth-child(1){
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .btn_01 li:nth-child(5) ,.btn_02 li:nth-child(5){
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .btn_02 ul{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .Article {
+            overflow: hidden; 
+            width: 1000px;
+            margin: 30px auto;
+        }
+
+        .mainArticle{
+            float: left;
+            width: 600px;
+            
+        }
+        .mainArticle div{
+            border: 1px solid black;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            width: 600px;
+            height: 170px;
+        }
+
+        .asideArticle{
+            width: 390px;
+            height: 600px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            float: left;
+            margin-left: 10px;
+            overflow: hidden; 
+        }
+        
+        .asideArticle img {
+            width: 200px;
+            float: left;
+            margin: 0 10px
+        }
+        .asideArticle p {
+            margin: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+           -webkit-line-clamp: 12;
+           -webkit-box-orient: vertical;
+        }
+        footer {
+            width: 1000px;
+            height: 200px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <h1>Lorem ipsum dolor</h1>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+    </div>
+
+    <nav>
+        <div class="btn_01">
+            <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Jquery</li>
+                <li>Node.js</li>
+            </ul>
+        </div>
+        <div class="btn_02">
+            <ul>
+                <li>Web</li>
+                <li>Mobile</li>
+                <li>Game</li>
+                <li>Simulation</li>
+                <li>Data</li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="Article">
+    <div class="mainArticle">
+            <div>
+                <h3>Main Article01</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi aliquid repudiandae, alias soluta repellat impedit nemo dicta molestias omnis accusamus sint voluptatum natus eveniet tempore quod nihil facere? Qui veritatis cum vero eos quos velit nemo, fuga exercitationem laborum sint voluptates excepturi rerum optio minus perferendis quae ipsam? Modi, illo?</p>
+            </div>
+            <div>
+                <h3>Main Article02</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis itaque qui molestiae deleniti. Fugit, similique velit? Inventore numquam voluptatibus voluptatem, quos, dolore possimus quaerat explicabo laudantium deserunt delectus alias? Ut sapiente dolorum accusamus cum magni id tempora architecto, in ea, praesentium, at quas dicta ipsa numquam animi eligendi culpa sint?</p>
+            </div>
+            <div>
+                <h3>Main Article03</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est similique molestiae voluptatibus. Accusamus impedit dolor, alias corporis, optio laudantium modi cupiditate ullam suscipit facilis eius sed dolore neque aliquam, nesciunt pariatur deserunt deleniti quis esse quod itaque? Id ipsam ratione praesentium adipisci omnis vero harum neque ipsa, qui voluptatem consequatur.</p>
+            </div>
+    </div>
+    <div class="asideArticle">
+        <div class="aside_01">
+            <img src="./img/popup_img.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil dicta labore, minus cumque error assumenda ab iste quidem quos saepe debitis in odio magnam reiciendis voluptate! Qui incidunt laboriosam voluptas id corrupti blanditiis labore quis optio, magnam sunt temporibus maiores saepe dignissimos ullam voluptatem, voluptatum sed illum. Deserunt, maxime, dolorem mollitia officia architecto tenetur soluta nulla, placeat quasi illum repellat.</p>
+        </div>
+        <div class="aside_02">
+            <img src="./img/popup_img.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil dicta labore, minus cumque error assumenda ab iste quidem quos saepe debitis in odio magnam reiciendis voluptate! Qui incidunt laboriosam voluptas id corrupti blanditiis labore quis optio, magnam sunt temporibus maiores saepe dignissimos ullam voluptatem, voluptatum sed illum. Deserunt, maxime, dolorem mollitia officia architecto tenetur soluta nulla, placeat quasi illum repellat.</p>
+        </div>
+    </div>
+    
+</section>
+
+<footer>
+<div>HTML5 / CSS3</div>
+</footer>
+
+
+</body>
+</html>
+
+
+
+
+<!-- width 1000
+제목 웹폰트
+인라인블럭 버튼만들기
+호버시  블랙 글자크기레 맞겟금 버튼 늘어나고 좌우크기 균등
+aside 안에 이미지와 텍스트  두개도 높이 맞춰야함
+점점점 말줄임표, 오늘날짜, 기사 여러개 등등 ellisips 
+윙배너 이미지 만들어서 < 열고 X 닫기 50px 50px
+-->

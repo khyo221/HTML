@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {margin: 0; padding: 0;}
+
+    li {list-style: none;}
+
+    #hamBtn {display: none;}
+
+    #hamBtn:checked~.list { height: 400px;}
+    
+    /* #hamBtn~.list {height: 0;} */
+    /* 원래속성에서 height가 기본속성으로 있기 떄문에생략가능 */
+
+    #hamBtn:checked~.lnb .closeBtn{display: block;}
+
+    #hamBtn~.lnb .closeBtn{display: none;}
+
+    #hamBtn~.lnb .openBtn { display: block; }
+
+    #hamBtn~.lnb .closeBtn {display: none;}
+
+    
+
+    .lnb label {
+        width: 50px;
+        height: 50px;
+        color: white;
+        background-color: black;
+        text-align: center;
+        line-height: 50px;
+        float: left;
+    }
+
+    .lnb ul {
+        width: 1000px;
+        height: 50px;
+        float: left;
+    }
+
+    .lnb li {
+        width: 200px;
+        height: 50px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        float: left;
+    }
+
+    .list {
+        width: 1050px;
+        /* height: 400px; */
+        height: 0;
+        background-color: antiquewhite;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 400px;
+        overflow: hidden;
+        transition: all 0.2s 0.1s;
+    }
+</style>
+
+
+<body>
+    <input type="checkbox" id="hamBtn">
+
+    <nav class="lnb">
+        <label for="hamBtn" class="openBtn">열기</label>
+        <label for="hamBtn" class="closeBtn">닫기</label>
+        <ul class="lnbMenu">
+            <li>menu01</li>
+            <li>menu02</li>
+            <li>menu03</li>
+            <li>menu04</li>
+            <li>menu05</li>
+        </ul>
+    </nav>
+    <div class="list">
+        Full_down_Menu
+    </div>
+
+
+
+
+</body>
+
+</html>
