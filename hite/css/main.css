@@ -1,0 +1,146 @@
+*{margin: 0;padding: 0 ;list-style: none;}
+
+header .logoouter {
+    width: 100%;
+    height: 30px;
+    background: #f5f5f5;
+}
+header .logoinner{
+    width: 990px;
+    margin: 0 auto;
+    text-align: center
+}
+header .gnbbox .gnb ul{
+    width: 990px;
+    margin: 0 auto;
+}
+header .gnbbox .gnb li{
+    float: left;
+    width: 25%;
+    padding: 30px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+
+header .gnbbox .login {
+    overflow: hidden;
+}
+
+
+header .gnbbox .login li{
+    float: left;
+    padding-top: 30px;
+    color:#ccc;
+    border-bottom: 1px solid #ccc;
+    padding-right: 10px;
+    font-size: 12px;
+}
+header .gnbbox .login li:nth-child(3){
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+/* ----------------------- mainVisual ---------------------- */
+.mainVisual{
+    width: 100%;
+}
+section{
+    background-color: #ccc;
+}
+.container{
+    width: 990px;
+    margin: 0 auto;
+}
+.container  .text  {
+    font-weight: 300;
+    font-size: 20px;  
+    padding-top: 50px;
+    margin:50px 0 ;
+}
+
+
+
+.container .img {
+    width: 990px;
+    overflow: hidden;
+}
+.container .img01,
+.container .img02 {
+    width: 490px;
+    height:510px;
+    float: left;
+    overflow: hidden; 
+}
+.container .img02 {
+    margin: 0;
+}
+
+.container .img01 div {
+    width: 240px; 
+    float: left;
+    overflow: hidden;
+}
+
+.container .img .img01_1 div:nth-child(1){
+    margin-left:10px ;
+}
+
+
+.container .img02 .img02_1{
+    width: 490px;
+    height: 240px;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 10px;
+    
+}
+.container .img02{
+    margin-bottom: 10px;
+}
+.container .img02 .img02_2{
+    width: 490px;
+    height: 260px;
+    float: left;
+    overflow: hidden;
+}
+.container .img02 .img02_1 div {
+    float: left;
+    width: 240px;
+    overflow: hidden;
+    margin-right: 10px;    
+}
+.container .img02 .img02_1 div:nth-child(2){
+    margin: 0;
+}
+.container .img02 .img02_2 div {
+    float: left;
+    width: 490px;
+    overflow: hidden;
+}
+
+
+.container .img03 {
+    width: 990px;
+   overflow: hidden;
+}
+.container .img03 div {
+    float: left;
+    margin-left: 10px;
+    overflow: hidden;
+
+}
+.container .img03 div:nth-child(2){
+    width: 480px;
+}
+.container .img03 div:nth-child(1),
+.container .img03 div:nth-child(3) {
+    width: 240px;   
+}
+
+/* ----------------------- hover---------------------- */
+
+.container .img .img02_1 div:hover {
+    width: 100%;
+   background: #ccc;
+   
+}
