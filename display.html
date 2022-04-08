@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        * { margin: 0; padding: 0; list-style: none;}
+
+        section {margin: 50px;}
+
+        div {
+            background-color: yellow;
+            width: 300px;
+            height: 200px;
+        }
+
+        span {
+            background-color: yellow;
+            width: 300px;
+            height: 200px;
+            /* display: block; */
+            display: inline-block;
+        }
+            /* 인라인요소 width height 사용불가능,인라인이라 옆에 올 수 있음 
+            인라인 블록 width height사용사능,자간 때문에 컨텐츠 레이아웃 잡을때는 사용안함
+            보통헤더안 gnb,lnb에사용(탭메뉴) 사용에 씀 */
+    
+    
+        .label {
+            width: 350px;
+            font-size: 0;
+        }
+        .label label {
+            width: 100px;
+            height: 50px;
+            border: 1px solid black; box-sizing: border-box;
+            display: inline-block;
+            /* float:left ; */
+            text-align: center;
+            line-height: 50px;
+            font-size: 16px;
+            /*  display: inline-block; - float이 가진 속성으로 인해 생기는 문제점을 해결하기 위해 사용하는 태그
+            인라인 블록 글자속성이기 때문에 자간생김 - 부모 속성에 폰트 0 ,자식에 폰트줌, a가 없을때 사용*/
+            /* 인라인블록이 플롯대신에 쓰이기 때문에 플롯과 같이 사용되면 안되는 속성 */
+        }   
+
+
+
+            /* a 사용 - 글자수가 다르기때문에 패딩으로 간격 띄워줌 width가 없기때문에 마우스 동작안됨 */
+        a { text-decoration: none; color: black; /* display: block; */}
+        .gnb { width: 500px;}
+        .gnb li {
+            float:left;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>box01</div>
+        <div>box02</div>
+        <div>box03</div>
+    </section>
+
+    <section>
+        <span>span01</span>
+        <span>span02</span>
+        <span>span03</span>
+    </section>
+
+    <div class="label">
+        <label class="lab01">label01</label>
+        <label class="lab02">label02</label>
+        <label class="lab03">label03</label>
+    </div>
+
+    <div class="gnb">
+        <ul>
+            <ul>
+                <li><a href="">login</a> </li>
+                <li><a href="">join </a></li>
+                <li><a href="">site_map</a></li>
+                <li><a href="">search</a></li>
+            </ul>
+        </ul>
+    </div>
+
+</body>
+
+</html>
