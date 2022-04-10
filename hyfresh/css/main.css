@@ -4,6 +4,19 @@
     list-style: none;
 }
 
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
 /* ----------------- */
 .header {
     width: 100%;
@@ -23,7 +36,7 @@
 }
 
 .gnb li {
-    float: left;
+    display: inline-block;
     padding-left: 10px;
 }
 
@@ -48,6 +61,7 @@
 .headermiddle .search {
     float: right;
     width: 200px;
+    padding: 10px 0;
 }
 
 .headermiddle .logo {
@@ -78,137 +92,46 @@
     float: left;
     font-weight: bold;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .lnb .lnbList li {
     float: left;
-    padding: 10px 30px;
+    padding: 12px 30px;
 }
 
 .lnb .lnbList li:nth-child(1) {
     padding-left: 50px;
 }
 
+.lnb .new {
+    float: left;
+}
+
 .lnb .life {
     float: right;
     font-size: 0;
-    overflow: hidden;
+    padding: 12px 0;
 }
 
 .lnb .life li {
-    float: left;
+    display: inline-block;
     color: rgb(102, 102, 102);
-    font-size: 5px;
-    line-height: 15px;
+    font-size: 12px;
     font-weight: bold;
     border-right: 1px solid #ddd;
-    padding: 12px;
+    /* line-height: 12px; */
+    padding: 0 5px;
 }
+
+.lnb .life li:last-child {
+    border: none;
+}
+
 /* -------------- mainVisual -------------- */
-.mainVisual{
-    width: 100%;
-    position: relative;
-    /* overflow: hidden; */
-    
-}
-.mainVisual div{
-    width: 1900px;
-    height: 370px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-/* .mainVisual .mainVisual01{
-    background: url(../img/visual_01.jpg);
-   
-}
-.mainVisual .mainVisual02{
-    background: url(../img/visual_02.jpg);
-    
-}
-.mainVisual .mainVisual03{
-    background: url(../img/visual_03.jpg);
-     
-}
-.mainVisual .mainVisual04{
-    background: url(../img/visual_04.jpg);
-     
-} */
-/* -------------- recommended_item  -------------- */
-.recommended_product{
-    width: 1070px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-.recommended_product h3{
-  text-align: center;
-  margin-bottom: 30px;
-}
-.recommended_product .product01_04{
-    float: left;
-    width: 1070px;
-    overflow: hidden;
-    margin-bottom: 10px;
-}
-.recommended_product .product05_08{
-    float: left;
-    width: 1070px;
-    overflow: hidden;
-    margin-bottom: 10px;
-}
-.recommended_product li{
-    float: left;
-    width: 252px;
-    border: 1px solid grey;
-    margin-right: 10px;
-}
-.recommended_product img{
+.mainVisual img {
     width: 100%;
 }
-.recommended_product  li:last-child{
-    margin: 0;
-}
 
 
-/* ------------- newItem --------------- */
-.newItem{
-    width: 1070px;
-    margin: 0 auto;
-}
-.newItem h3{
-  text-align: center;
-  margin-bottom: 30px;
-}
-.newItem .new01{
-    background: url(../img/new01.jpg);
-    width:345px ;
-    height: 345px;
-}
-.newItem .new02{
-    background: url(../img/new02.jpg);
-    width:345px ;
-    height: 345px;
-}
-.newItem .new03{
-    background: url(../img/new03.jpg);
-    width:345px ;
-    height: 345px;
-}
-.newItem .new01:hover{
-    background: url(../img/new01_on.jpg);
-}
-.newItem .new02:hover{
-    background: url(../img/new02_on.jpg);
-}
-.newItem .new03:hover{
-    background: url(../img/new03_on.jpg);
-}
 
-.newItem li{
-    float: left;
-    margin-right: 10px;
-}
-.newItem li:last-child{
-    margin: 0;
-}
+/* --------------  -------------- */
